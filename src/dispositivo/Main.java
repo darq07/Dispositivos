@@ -4,13 +4,13 @@ public class Main {
     public static void main(String[] args) {
         Dispositivo d1 = new Dispositivo();
         Dispositivo d2 = new Dispositivo();
-        d1.nombre="Teclado";
-        d1.tipo="Entrada";
-        d1.activo=true;
+        d1.setNombre("Teclado");
+        d1.setTipo("Entrada");
+        d1.setActivo(true);
 
-        d2.nombre="Mouse";
-        d2.tipo="Entrada";
-        d2.activo=false;
+        d2.setNombre("Mouse");
+        d2.setTipo("Entrada");
+        d2.setActivo(false);
 
         d1.mostrarInformacion();
         d1.mostrarEstado();
@@ -18,7 +18,9 @@ public class Main {
         d2.mostrarInformacion();
         d2.mostrarEstado();
 
-        d1.activo=false;
-        d1.mostrarEstado();
+        d2.setNombre("");
+        System.out.println(d2.getNombre());
+
+
     }
 }
